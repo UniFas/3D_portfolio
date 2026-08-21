@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNI FAS 3D - Francis Santos</title>
+
+<link rel="icon" type="image/png" href="../assets/Branding_unifas3d/logo_v4.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="glow-layer" id="glow"></div>
+<div class="grain"></div>
+
+<nav id="nav">
+  <div class="nav-mark">UNI<span>FAS</span>3D</div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="../pages/projects.html">Projects</a>
+    <a href="#">Workflow</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <canvas id="fog"></canvas>
+  <div class="hero-content">
+    <span class="eyebrow">Francis Santos — 3D Art &amp; Game Development</span>
+    <h1>UNI FAS 3D</h1>
+    <p class="tagline">Creating immersive worlds through 3D art, animation and atmospheric storytelling.</p>
+    <div class="hero-ctas">
+      <a href="#featured" class="btn btn-primary">View Portfolio</a>
+      <a href="#" class="btn btn-ghost">Explore Workflow</a>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>SCROLL</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<section class="featured" id="featured">
+  <div class="featured-grid">
+
+    <div class="featured-copy">
+      <span class="eyebrow">Featured Project</span>
+      <h2>Royale Mashine</h2>
+      <p>
+        Found as a single 2D concept on Pinterest, no turnaround sheet, no orthographic
+        breakdown, just <strong>one illustration and an artist's note about a spinning crown</strong>.
+        Everything past that point was a guess made in three dimensions.
+      </p>
+      <p>
+        Full pipeline from a lone reference: <strong>modeled, textured, rigged and animated</strong>
+        by reasoning out the forms the sketch only implied. It's the piece that best represents
+        how I actually work, translating someone else's flat idea into something that stands,
+        turns, and holds a pose.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Blender</span>
+        <span class="tag">Substance Painter</span>
+        <span class="tag">Rigging</span>
+        <span class="tag">Animation</span>
+      </div>
+      <div class="featured-ctas">
+        <a href="#" class="btn btn-primary">View Case Study</a>
+        <a href="#" class="btn btn-ghost">View Gallery</a>
+      </div>
+    </div>
+
+    <div class="featured-visual">
+      <div class="viewport" id="viewport">
+        <img class="vp-output" src="../assets/RoyalMachine/Comparasion_after_3d.png" alt="Final rendered 3D model of Royale Mashine">
+        <img class="vp-reference" src="../assets/RoyalMachine/RoyalMachine_ref.jpg" alt="Original 2D concept sketch of Royale Mashine">
+        <div class="vp-corner tl"></div>
+        <div class="vp-corner tr"></div>
+        <div class="vp-corner bl"></div>
+        <div class="vp-corner br"></div>
+        <span class="vp-label left">Reference</span>
+        <span class="vp-label right">Output</span>
+        <div class="vp-divider"></div>
+        <div class="vp-handle-dot">↔</div>
+        <input type="range" class="vp-handle-input" id="vpRange" min="0" max="100" value="42" aria-label="Drag to compare reference concept and final 3D render">
+      </div>
+      <div class="vp-caption">
+        <span>
+          <a href="https://pt.pinterest.com/pin/643733340521890578/"
+            target="_blank"
+            rel="noopener noreferrer">
+            SRC: pinterest_concept.jpg
+          </a>
+        </span>
+        <span class="hl">drag to compare</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="../js/script.js" defer></script>
+
+</body>
+</html>

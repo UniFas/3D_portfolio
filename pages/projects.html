@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - UNI FAS 3D</title>
+
+<link rel="icon" type="image/png" href="../assets/Branding_unifas3d/logo_v4.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style_project.css">
+</head>
+<body>
+
+<div class="glow-layer" id="glow"></div>
+<div class="grain"></div>
+
+<nav id="nav" class="scrolled">
+  <div class="nav-mark">UNI<span>FAS</span>3D</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="is-current">Projects</a>
+    <a href="index.html#">Workflow</a>
+    <a href="index.html#">About</a>
+    <a href="index.html#">Contact</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <span class="eyebrow">Portfolio</span>
+  <h1>Projects</h1>
+  <p>A working record of finished pieces and the pipeline behind them, game assets, character and creature work, and commercial pieces.</p>
+</header>
+
+<section class="featured" id="featured">
+  <div class="featured-grid">
+
+    <div class="featured-copy">
+      <span class="eyebrow">Featured Project</span>
+      <h2>Royale Mashine</h2>
+      <p>
+        Found as a single 2D concept on Pinterest, no turnaround sheet, no orthographic
+        breakdown, just <strong>one illustration and an artist's note about a spinning crown</strong>.
+        Everything past that point was a guess made in three dimensions.
+      </p>
+      <p>
+        Full pipeline from a lone reference: <strong>modeled, textured, rigged and animated</strong>
+        by reasoning out the forms the sketch only implied. It's the piece that best represents
+        how I actually work, translating someone else's flat idea into something that stands,
+        turns, and holds a pose.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Blender</span>
+        <span class="tag">Substance Painter</span>
+        <span class="tag">Rigging</span>
+        <span class="tag">Animation</span>
+      </div>
+      <div class="featured-ctas">
+        <a href="#" class="btn btn-primary">View Case Study</a>
+        <a href="#" class="btn btn-ghost">View Gallery</a>
+      </div>
+    </div>
+
+    <div class="featured-visual">
+      <div class="viewport" id="viewport">
+        <img class="vp-output" src="../assets/RoyalMachine/Comparasion_after_3d.png" alt="Final rendered 3D model of Royale Mashine">
+        <img class="vp-reference" src="../assets/RoyalMachine/Comparasion_Before_Sketch.png" alt="Original 2D concept sketch of Royale Mashine">
+        <div class="vp-corner tl"></div>
+        <div class="vp-corner tr"></div>
+        <div class="vp-corner bl"></div>
+        <div class="vp-corner br"></div>
+        <span class="vp-label left">Reference</span>
+        <span class="vp-label right">Output</span>
+        <div class="vp-divider"></div>
+        <div class="vp-handle-dot">↔</div>
+        <input type="range" class="vp-handle-input" id="vpRange" min="0" max="100" value="42" aria-label="Drag to compare reference concept and final 3D render">
+      </div>
+      <div class="vp-caption">
+        <span>SRC: pinterest_concept.jpg</span>
+        <span class="hl">drag to compare</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="projects-head">
+    <span class="eyebrow">Selected Work</span>
+    <h2>All Projects</h2>
+    <div class="filter-bar" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="assets">Game Assets &amp; Props</button>
+      <button class="filter-btn" data-filter="character">Character &amp; Creature</button>
+      <button class="filter-btn" data-filter="product">Product &amp; Commercial</button>
+    </div>
+  </div>
+
+  <div class="project-grid" id="projectGrid">
+
+     <!-- ---------- Project Card ---------- -->
+
+      <!-- ---------- here is to input the link  ---------- -->
+
+    <a href="#" class="project-card span-2" data-category="assets">
+      <img src="../assets/RoyalMachine/CoverPick_RoyalMachine.png" alt="Royale Mashine — modeled, rigged and animated 3D robot character">
+      <div class="card-overlay">
+        <span class="card-tag">Featured</span>
+        <h3>Royale Mashine</h3>
+        <p class="card-cat">Game Assets &amp; Props</p>
+      </div>
+    </a>
+
+    <a href="#" class="project-card" data-category="product">
+      <img src="../assets/ProductAdvertisement/CoverPick_produckAdvertisement.png" alt="Goliath Blend whey protein packaging design">
+      <div class="card-overlay">
+        <h3>Several Product Avertesiment</h3>
+        <p class="card-cat">Product &amp; Commercial</p>
+      </div>
+    </a>
+
+    <a href="#" class="project-card span-2-rows" data-category="character">
+      <img src="assets/monster_scene.png" alt="Creature emerging from fog in an underground tunnel environment">
+      <div class="card-overlay">
+        <h3>Underground</h3>
+        <p class="card-cat">Character &amp; Creature</p>
+      </div>
+    </a>
+
+    <a href="#" class="project-card" data-category="character">
+      <img src="assets/tvhead_character.png" alt="Rigged character study with a television-shaped head">
+      <div class="card-overlay">
+        <h3>Static</h3>
+        <p class="card-cat">Character &amp; Creature</p>
+      </div>
+    </a>
+
+    <div class="project-card is-placeholder" aria-hidden="true">
+      <div class="placeholder-inner">
+        <span>+ Next Upload</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <!-- ----------takes the viewr to dev portefolio ---------- -->
+
+<section>
+  <a href="https://portfolio-gray-xi-aqmc84pa1m.vercel.app/"
+     class="dev-banner"
+     target="_blank"
+     rel="noopener"
+     aria-label="Check my UNI FAS DEV work">
+
+    <span class="dev-banner-logo-wrap">
+      <img src="../assets/OtherAssets/2_transparent.png" alt="" class="dev-banner-logo">
+    </span>
+
+    <span class="dev-banner-content">
+      <span class="dev-banner-eyebrow">portfolio</span>
+      <span class="dev-banner-text">Check my dev work</span>
+    </span>
+
+    <span class="dev-banner-arrow" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+  </a>
+</section>
+
+<script src="../js/script_project.js" defer></script>
+
+</body>
+</html>
