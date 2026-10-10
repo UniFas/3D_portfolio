@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - UNI FAS 3D</title>
+<meta name="description" content="Interactive 3D turntables by Francis Santos: modeled, textured, rigged and animated in Blender.">
+
+<link rel="icon" type="image/png" href="../assets/Branding_unifas3d/logo_v4.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/gallery.css">
+</head>
+
+<body>
+
+<div class="glow-layer" id="glow"></div>
+<div class="grain"></div>
+
+<nav id="nav">
+  <a href="../index.html" class="nav-mark">UNI<span>FAS</span>3D</a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
+  </div>
+</nav>
+
+<header class="page-head">
+  <span class="eyebrow">Portfolio / Gallery</span>
+  <h1>Turntables</h1>
+  <p>
+    Every piece below is a live model. Press play, then drag to orbit, scroll to zoom,
+    and use the viewer's settings to inspect wireframe and textures. Hosted on Sketchfab.
+  </p>
+</header>
+
+<main class="gallery">
+  <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+
+  <p class="gallery-empty" id="galleryEmpty" hidden>
+    No models added yet. Open <code>js/gallery.js</code> and paste your Sketchfab model IDs into the list.
+  </p>
+
+  <div class="gallery-foot">
+    <a href="https://sketchfab.com/unifasDev" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">All models on Sketchfab ↗</a>
+  </div>
+</main>
+
+<script src="../js/gallery.js" defer></script>
+
+</body>
+</html>

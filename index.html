@@ -5,6 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNI FAS 3D - Francis Santos</title>
+<meta name="description" content="Francis Santos: 3D artist and game developer. I model, map, rig and animate game-ready assets in Blender. Currently building The Developer.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="UNI FAS 3D - Francis Santos">
+<meta property="og:description" content="3D art and game development. Currently building The Developer, an enemy for my game The Interview.">
+<meta property="og:image" content="https://3-d-portfolio-blush-rho.vercel.app/assets/TheDeveloper/concept-sheet.webp">
+<meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" type="image/png" href="assets/Branding_unifas3d/logo_v4.png">
 
@@ -12,28 +19,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+
+<script>document.documentElement.classList.add('js');</script>
 </head>
 
 
-<body>
+<body id="top">
 
 <div class="glow-layer" id="glow"></div>
 <div class="grain"></div>
 
 <nav id="nav">
-  <div class="nav-mark">UNI<span>FAS</span>3D</div>
+  <a href="index.html" class="nav-mark">UNI<span>FAS</span>3D</a>
   <div class="nav-links">
+    <a href="#now">In production</a>
+    <a href="#royale">Royale Mashine</a>
+    <a href="#props">Props</a>
+    <a href="pages/gallery.html">Gallery</a>
     <a href="pages/projects.html" class="btn btn-primary">View Portfolio</a>
-
-    <!-- ---------- ideas for future pages 
-   
-    <a href="#">Workflow</a>
-    <a href="#">About</a> 
-
-    ---------- -->
   </div>
 </nav>
 
+<!-- ============================ HERO ============================ -->
 <section class="hero">
   <canvas id="fog"></canvas>
   <div class="hero-content">
@@ -41,9 +49,11 @@
     <h1>UNI FAS 3D</h1>
     <p class="tagline">Creating immersive worlds through 3D art, animation and atmospheric storytelling.</p>
     <div class="hero-ctas">
-      <a href="pages/projects.html">Projects</a>class="btn btn-primary">View Portfolio</a>
-      <a href="#" class="btn btn-ghost">Explore Workflow</a>
+      <a href="#now" class="btn btn-primary">What I'm building now</a>
+      <a href="#royale" class="btn btn-ghost">Royale Mashine</a>
+      <a href="pages/gallery.html" class="btn btn-ghost">Live 3D gallery</a>
     </div>
+    <p class="hero-tools">Blender <i>/</i> Substance Painter <i>/</i> Rigging <i>/</i> Animation</p>
   </div>
   <div class="scroll-cue">
     <span>SCROLL</span>
@@ -51,7 +61,119 @@
   </div>
 </section>
 
-<section class="featured" id="featured">
+<!-- ============================ HOW I WORK ============================ -->
+<section class="section how" id="how">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">How I work</span>
+      <h2>Give me a reference.<br>I'll hand back a finished asset.</h2>
+      <p>I don't stop because the thing I need doesn't exist yet. If a game needs it, I make it, and then I keep going.</p>
+    </div>
+
+    <div class="how-grid reveal">
+      <div class="how-cell">
+        <span class="how-num">01</span>
+        <h3>Model</h3>
+        <p>From blockout to clean, game-ready topology.</p>
+      </div>
+      <div class="how-cell">
+        <span class="how-num">02</span>
+        <h3>Map</h3>
+        <p>UVs, baked normals and PBR textures.</p>
+      </div>
+      <div class="how-cell">
+        <span class="how-num">03</span>
+        <h3>Rig</h3>
+        <p>Skeletons that hold a pose and deform properly.</p>
+      </div>
+      <div class="how-cell">
+        <span class="how-num">04</span>
+        <h3>Animate</h3>
+        <p>Loops, cycles and one-shots that read clearly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ IN PRODUCTION: THE DEVELOPER ============================ -->
+<section class="section now" id="now">
+  <div class="section-inner now-grid">
+
+    <div class="now-visual reveal">
+      <div class="frame">
+        <button type="button" data-zoom="assets/TheDeveloper/concept-sheet.webp"
+                data-caption="The Developer: concept sheet (AI-generated reference I model from)"
+                aria-label="Open the full concept sheet for The Developer">
+          <img src="assets/TheDeveloper/concept-sheet.webp" alt="Character sheet for The Developer: a gaunt, long-limbed creature with an old TV monitor for a head, shown from front, three-quarter, side and back, with hands, head expressions and a desk environment." width="1536" height="1024">
+        </button>
+        <div class="vp-corner tl"></div>
+        <div class="vp-corner tr"></div>
+        <div class="vp-corner bl"></div>
+        <div class="vp-corner br"></div>
+      </div>
+      <p class="cap"><span>Concept sheet — AI-generated reference I model from</span><span class="hl">tap to zoom</span></p>
+
+      <div class="wip">
+        <button type="button" class="thumb" data-zoom="assets/TheDeveloper/concept-head.webp"
+                data-caption="Head concept: an old monitor that doubles as a helmet">
+          <img src="assets/TheDeveloper/concept-head.webp" alt="Close-up concept of The Developer's monitor head with a pixel face" loading="lazy">
+          <span>Head concept</span>
+        </button>
+        <button type="button" class="thumb" data-zoom="assets/TheDeveloper/blockout-skin-mesh.webp"
+                data-caption="Blockout in Blender: Mirror, Skin and Subdivision modifiers">
+          <img src="assets/TheDeveloper/blockout-skin-mesh.webp" alt="Blender viewport showing the early blockout of the character built with the Skin modifier" loading="lazy">
+          <span>Blockout in Blender</span>
+        </button>
+        <button type="button" class="thumb" data-zoom="assets/TheDeveloper/scale-check.webp"
+                data-caption="Scale check against a 1.8 m human reference, front and side">
+          <img src="assets/TheDeveloper/scale-check.webp" alt="Front and side A-pose concept next to a 1.8 metre human reference mesh" loading="lazy">
+          <span>Scale check, 1.8 m ref</span>
+        </button>
+        <button type="button" class="thumb" data-zoom="assets/TheDeveloper/base-concept.webp"
+                data-caption="Base concept: the developer's desk and workout corner">
+          <img src="assets/TheDeveloper/base-concept.webp" alt="Concept of a dark desk workspace with monitors, a chair and dumbbells" loading="lazy">
+          <span>Base concept</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="now-copy reveal">
+      <span class="chip-live">In production</span>
+      <h2>The Developer</h2>
+      <p class="now-quote">“I can be better too.”</p>
+
+      <p>
+        An enemy for my game <strong>The Interview</strong>. He used to be a game developer, a man
+        who kept thinking <em>“this isn't enough, I need to do better”</em> until the thought started
+        applying to his own flesh. No sleep, faster hands, and eventually an old monitor where his
+        head used to be.
+      </p>
+      <p>
+        It's a full real-time character kit built from scratch in Blender: <strong>character, prop and
+        base</strong>, all PBR, with normals baked from high-poly.
+      </p>
+
+      <div class="spec">
+        <div><b>15k</b><span>Character tris · one 4K sheet</span></div>
+        <div><b>5k</b><span>Prop tris · 2K texture</span></div>
+        <div><b>5k</b><span>Base tris · 2K texture</span></div>
+        <div><b>PBR</b><span>Albedo, Metal, Rough, Normal</span></div>
+      </div>
+
+      <ul class="pipe">
+        <li class="done"><span class="st">Done</span><span><strong>Concept and scale</strong> reference gathered</span></li>
+        <li class="done"><span class="st">Done</span><span><strong>Prop:</strong> Developer Computer, live <a href="#props">below</a></span></li>
+        <li class="doing"><span class="st">Doing</span><span><strong>Character blockout:</strong> Mirror, Skin and Subdivision</span></li>
+        <li><span class="st">Next</span><span><strong>High-poly, retopo, bakes, textures</strong> and rig</span></li>
+        <li><span class="st">Planned</span><span><strong>Base:</strong> the developer's desk scene</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================ ROYALE MASHINE ============================ -->
+<section class="featured" id="royale">
   <div class="featured-grid">
 
     <div class="featured-copy">
@@ -75,8 +197,8 @@
         <span class="tag">Animation</span>
       </div>
       <div class="featured-ctas">
-        <a href="#" class="btn btn-primary">View Case Study</a>
-        <a href="#" class="btn btn-ghost">View Gallery</a>
+        <a href="#royale-video" class="btn btn-primary">Watch the video</a>
+        <a href="pages/gallery.html" class="btn btn-ghost">View Gallery</a>
       </div>
     </div>
 
@@ -107,9 +229,104 @@
     </div>
 
   </div>
+
+  <div class="video-row" id="royale-video">
+    <p class="cap">
+      <span>Royale Mashine in motion</span>
+      <a class="hl" href="https://youtu.be/Np_ebbD-NLE" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+    </p>
+    <div class="video" data-yt="Np_ebbD-NLE" data-title="Royale Mashine: animation video">
+      <button type="button" aria-label="Play the Royale Mashine video"><span class="play"></span></button>
+    </div>
+  </div>
 </section>
 
+<!-- ============================ PROPS ============================ -->
+<section class="section props" id="props">
+  <div class="section-inner">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Game props</span>
+      <h2>Props for games</h2>
+      <p>Props I'm making for games I'm working on. Some are in their finishing touches, so this section grows as they ship.</p>
+    </div>
+
+    <div class="props-top reveal">
+      <div>
+        <div class="embed">
+          <iframe title="Developer Computer: interactive 3D prop"
+                  loading="lazy" allowfullscreen
+                  allow="autoplay; fullscreen; xr-spatial-tracking"
+                  src="https://sketchfab.com/models/3d201bfa51e44da0bb8633e9db623f05/embed?ui_theme=dark&amp;dnt=1"></iframe>
+        </div>
+        <p class="cap">
+          <span>Developer Computer — the prop for The Developer</span>
+          <a class="hl" href="https://sketchfab.com/3d-models/school-project-proppart-developer-computer-3d201bfa51e44da0bb8633e9db623f05" target="_blank" rel="noopener noreferrer">Open on Sketchfab ↗</a>
+        </p>
+      </div>
+
+      <div class="props-side">
+        <h3>Built piece by piece</h3>
+        <p>
+          Keyboard, vents, bumpers, LEDs, cables on Bezier curves, a back-of-screen battery and
+          antenna. Every part is its own asset, then it all folds into one 5k-triangle prop on a single 2K sheet.
+        </p>
+        <div class="wip wip-2">
+          <button type="button" class="thumb" data-zoom="assets/TheDeveloper/prop-sticky-note.webp"
+                  data-caption="Sticky note detail: a plane with an edge loop, bent by hand">
+            <img src="assets/TheDeveloper/prop-sticky-note.webp" alt="Sticky note on the computer reading Dreams plus Work equals Success" loading="lazy">
+            <span>Sticky note detail</span>
+          </button>
+          <button type="button" class="thumb" data-zoom="assets/TheDeveloper/prop-logo-plate.webp"
+                  data-caption="My logo plate on the back of the screen">
+            <img src="assets/TheDeveloper/prop-logo-plate.webp" alt="Logo plate on the back of the laptop screen reading UNI FAS DEV 3D" loading="lazy">
+            <span>Logo plate, back of screen</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="props-block reveal">
+      <p class="cap"><span>Finishing touches</span><a class="hl" href="pages/gallery.html">More 3D in the gallery →</a></p>
+      <div class="props-grid" id="propsGrid"></div>
+      <p class="props-empty" id="propsEmpty" hidden>More prop photos are on the way. Finishing touches in progress.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="section contact" id="contact">
+  <div class="section-inner contact-inner reveal">
+    <div>
+      <span class="eyebrow">Say hi</span>
+      <h2>Let's make something.</h2>
+    </div>
+    <div class="contact-links">
+      <a href="https://sketchfab.com/unifasDev" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sketchfab ↗</a>
+      <a href="https://youtu.be/Np_ebbD-NLE" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Royale Mashine video ↗</a>
+      <a href="https://portfolio-gray-xi-aqmc84pa1m.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Programming portfolio ↗</a>
+      <a href="pages/projects.html" class="btn btn-ghost">All projects</a>
+      <!-- Add your email, LinkedIn or itch.io here, for example:
+      <a href="mailto:you@example.com" class="btn btn-ghost">Email</a>
+      -->
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <span>© 2026 Francis Santos — UNI FAS 3D</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<dialog id="lightbox" class="lightbox" aria-label="Image viewer">
+  <button type="button" class="lb-close" aria-label="Close image">×</button>
+  <img alt="">
+  <p class="lb-cap"></p>
+</dialog>
+
 <script src="js/script.js" defer></script>
+<script src="js/home.js" defer></script>
 
 </body>
 </html>
