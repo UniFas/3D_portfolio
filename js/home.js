@@ -79,7 +79,15 @@ document.querySelectorAll('.video[data-yt]').forEach(box => {
   const play = box.querySelector('button');
   if (!play) return;
   play.addEventListener('click', () => {
+    // YouTube refuses to play embeds that send no referrer (error 153), which is
+    // what happens when index.html is opened straight from a folder (file://).
+    // In that case open the video on YouTube instead. On the live site it embeds.
+    if (location.protocol === 'file:') {
+      window.open('https://youtu.be/' + encodeURIComponent(box.dataset.yt), '_blank', 'noopener');
+      return;
+    }
     const iframe = document.createElement('iframe');
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(box.dataset.yt) +
                  '?autoplay=1&rel=0';
     iframe.title = box.dataset.title || 'Video';
