@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animations - UNI FAS 3D</title>
+<meta name="description" content="Rigging and animation work by Francis Santos (UnifasDev): creature animation, a dance short with a custom rig, and Blender courses.">
+<link rel="icon" type="image/png" href="../assets/Branding_unifas3d/logo_v4.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/horror.css">
+<link rel="stylesheet" href="../css/animations.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Replace this nav with the one from your other pages so it matches exactly -->
+<nav class="nav">
+  <a class="logo" href="../index.html">UNI<b>FAS</b>3D</a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+  </div>
+</nav>
+
+<header class="h-hero a-hero">
+  <div class="h-hero-inner a-hero-grid">
+    <div>
+      <span class="eyebrow">Rigging &middot; Animation &middot; Blender</span>
+      <h1>Ani<em>mations</em></h1>
+      <p>I love rigging objects and characters and giving them life. This page collects my animation work: creature and camera animation, a full dance short with a custom rig, and the courses behind it. Still plenty to improve, and I'm enjoying every step.</p>
+      <div class="h-hero-links">
+        <a class="btn" href="#school">Dance short</a>
+        <a class="btn btn-ghost" href="#horror">Horror animation</a>
+        <a class="btn btn-ghost" href="#learning">Courses</a>
+      </div>
+    </div>
+    <figure class="a-spider">
+      <img src="../assets/Animations/Show_spiderGif.gif" alt="A rigged spider moving on a turntable">
+      <figcaption class="cap"><span>Rig test</span><span class="hl">Spider &middot; I love rigging things</span></figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- ============ HORROR ============ -->
+<section class="section" id="horror">
+  <div class="section-inner a-split">
+    <div class="a-copy reveal">
+      <span class="chip-live">Creature &amp; camera animation</span>
+      <h2>Horror monsters</h2>
+      <p>In my horror shorts I animated the monsters and the camera myself. Slow creeping movement and careful camera work do most of the scaring.</p>
+      <div class="a-actions">
+        <a class="btn" href="horror-stories.html">Watch the horror stories</a>
+      </div>
+    </div>
+    <figure class="frame reveal">
+      <a href="horror-stories.html"><img src="../assets/HorrorStory/terror-valley-render.webp" alt="Terror Valley: a clawed creature creeping in from the dark" loading="lazy"></a>
+      <figcaption class="cap"><span>Terror Valley</span><span class="hl">Monster + camera animation</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ SCHOOL PROJECT ============ -->
+<section class="section a-school" id="school">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">School project &middot; 3D Simulation and Animation &middot; ESTG IPLeiria</span>
+      <h2>Robot dance</h2>
+      <p>For my animation class I rigged a robot from scratch and animated a 30-second dance. I hand-keyed the choreography from a reference video, added electric sparks with a particle system, and rendered it with six cameras.</p>
+    </div>
+
+    <div class="video reveal" data-yt="SEQfCS2hB94" data-title="Robot dance: school animation project">
+      <button type="button" aria-label="Play robot dance"><span class="play"></span></button>
+    </div>
+    <div class="cap reveal">
+      <span>Final animation &middot; 30 seconds</span>
+      <span>
+        <a class="hl" href="../assets/Animations/3DSA_MiniReport_FranciscoSantos.pdf" target="_blank" rel="noopener">Read the report (PDF) &#8599;</a>
+        &nbsp;&middot;&nbsp;
+        <a class="hl" href="https://youtu.be/SEQfCS2hB94" target="_blank" rel="noopener">YouTube &#8599;</a>
+      </span>
+    </div>
+
+    <div class="a-steps">
+      <article class="a-step reveal">
+        <button type="button" data-full="../assets/Animations/robot-rig.webp" data-cap="Robot rig: IK on arms and legs, root and hip controls">
+          <img src="../assets/Animations/robot-rig.webp" alt="Robot character armature in a T-pose" loading="lazy">
+        </button>
+        <span class="how-num">01 &middot; Rigging</span>
+        <h3>Rig from scratch</h3>
+        <p>A Blender armature with consistent left/right naming, IK on arms and legs with pole targets, plus a root bone and a hip control to make posing easier.</p>
+      </article>
+      <article class="a-step reveal">
+        <button type="button" data-full="../assets/Animations/robot-face-bones.webp" data-cap="Three facial bones: both eyes and the mouth">
+          <img src="../assets/Animations/robot-face-bones.webp" alt="Robot face with control bones around the eyes and mouth" loading="lazy">
+        </button>
+        <span class="how-num">02 &middot; Expression</span>
+        <h3>Face controls</h3>
+        <p>Three extra bones drive the eyes and mouth, so gaze and exaggerated expressions animate independently from the body.</p>
+      </article>
+      <article class="a-step reveal">
+        <button type="button" data-full="../assets/Animations/robot-weight-paint.webp" data-cap="Weight painting on the torso and joints">
+          <img src="../assets/Animations/robot-weight-paint.webp" alt="Weight paint heat map on the robot torso" loading="lazy">
+        </button>
+        <span class="how-num">03 &middot; Weights</span>
+        <h3>Clean deformation</h3>
+        <p>Weight painting with subtract, blur and smear brushes, with extra care on the joints so nothing breaks while the robot moves.</p>
+      </article>
+      <article class="a-step reveal">
+        <button type="button" data-full="../assets/Animations/robot-dance-pose.webp" data-cap="Keyframing the dance in the Dope Sheet and Graph Editor">
+          <img src="../assets/Animations/robot-dance-pose.webp" alt="Robot posed mid-dance with the timeline below" loading="lazy">
+        </button>
+        <span class="how-num">04 &middot; Animation</span>
+        <h3>Hand-keyed dance</h3>
+        <p>Every pose keyed manually on the armature, following a choreography reference frame by frame in the Dope Sheet and Graph Editor.</p>
+      </article>
+      <article class="a-step reveal">
+        <button type="button" data-full="../assets/Animations/robot-sparks.webp" data-cap="Particle sparks bursting from the joint">
+          <img src="../assets/Animations/robot-sparks.webp" alt="Orange spark particles flying from the robot's joint" loading="lazy">
+        </button>
+        <span class="how-num">05 &middot; Simulation</span>
+        <h3>Electric sparks</h3>
+        <p>A particle system with short-lived, randomized sparks, timed to fire on the sharp, abrupt moves of the dance.</p>
+      </article>
+      <article class="a-step reveal">
+        <button type="button" data-full="../assets/Animations/robot-scene.webp" data-cap="Minimal office scene with six cameras">
+          <img src="../assets/Animations/robot-scene.webp" alt="Minimal office cubicle scene with camera outlines" loading="lazy">
+        </button>
+        <span class="how-num">06 &middot; Cameras</span>
+        <h3>Six cameras</h3>
+        <p>A simple office I modeled, shot with six cameras rendered in passes. A small joke: a second robot plays the camera operator.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARNING ============ -->
+<section class="a-train" id="learning">
+  <div class="a-train-inner reveal">
+    <span class="eyebrow">Training</span>
+    <div class="a-train-body">
+      <div class="a-epi">
+        <img src="../assets/Animations/epi-logo.webp" alt="EPI - Escola Profissional de Imagem" loading="lazy">
+        <p>High school in <strong>Professional 2D &amp; 3D Animation</strong> at EPI. Three years learning the fundamentals with professionals from the industry.</p>
+      </div>
+      <p class="a-more">Plus Blender courses on animation and rigging
+        (<a href="#" target="_blank" rel="noopener">Animation &amp; Rigging</a>,
+        <a href="#" target="_blank" rel="noopener">Ultimate Rigging &amp; Animation</a>)
+        and ongoing self-study. Still improving, and rigging is the part I enjoy most.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <span>&copy; 2026 Francis Santos &mdash; UNI FAS 3D</span>
+  <span><a href="projects.html">&larr; All projects</a> &nbsp;&middot;&nbsp; <a href="#top">Back to top &uarr;</a></span>
+</footer>
+
+<dialog class="lightbox" id="lb">
+  <button class="lb-close" type="button" aria-label="Close">&times;</button>
+  <img alt="">
+  <div class="lb-cap"></div>
+</dialog>
+
+<script src="../js/horror.js"></script>
+</body>
+</html>

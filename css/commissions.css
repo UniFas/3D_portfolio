@@ -1,0 +1,38 @@
+/* Commissions page. Loads after style.css, home.css and horror.css. */
+.c-hero{
+  min-height:70vh;
+  background:
+    radial-gradient(ellipse 55% 60% at 80% 30%, rgba(93,226,255,0.10), transparent 70%),
+    radial-gradient(ellipse 50% 50% at 15% 95%, rgba(245,121,42,0.12), transparent 70%),
+    var(--bg-primary);
+}
+.c-hero h1{ animation:none; }
+.c-hero h1 em{ color:var(--accent); }
+
+.c-services{
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px; background:var(--line); border:1px solid var(--line);
+}
+.c-services div{ background:var(--bg-primary); padding:1.8rem 1.5rem 2rem; transition:background .3s ease; }
+.c-services div:hover{ background:var(--bg-secondary); }
+.c-services b{ font-family:var(--font-mono); font-size:.7rem; letter-spacing:.2em; color:var(--accent); font-weight:400; }
+.c-services h3{ font-family:var(--font-display); font-weight:400; font-size:2rem; letter-spacing:.03em; margin:.5rem 0 .4rem; }
+.c-services p{ color:var(--text-secondary); font-size:.92rem; line-height:1.6; }
+@media (max-width:860px){ .c-services{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+.c-case{
+  display:grid; grid-template-columns:1.25fr .75fr;
+  gap:clamp(2rem,4vw,4.5rem); align-items:center;
+  margin-top:clamp(3rem,6vw,5rem);
+}
+.c-case.flip{ grid-template-columns:.75fr 1.25fr; }
+.c-case.flip .c-media{ order:2; }
+.c-copy h3{ font-family:var(--font-display); font-weight:400; font-size:clamp(2.4rem,5vw,3.8rem); line-height:.95; letter-spacing:.02em; margin:1.1rem 0 .9rem; }
+.c-copy p{ color:var(--text-secondary); line-height:1.75; max-width:46ch; }
+.c-copy p strong{ color:var(--text-primary); font-weight:500; }
+.c-copy .spec{ margin-bottom:0; }
+.c-copy .spec b{ font-size:1.6rem; }
+@media (max-width:980px){
+  .c-case,.c-case.flip{ grid-template-columns:1fr; }
+  .c-case.flip .c-media{ order:0; }
+}
