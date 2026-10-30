@@ -114,3 +114,15 @@
 @media (prefers-reduced-motion:reduce){
   .h-hero h1,.lt-title,.lt-bg{ animation:none; }
 }
+
+/* ---------- cam 4 ---------- */
+.cam4-chip{ margin-top:1.4rem; }
+
+/* Stills: same pattern as Terror Valley, two equal slots */
+.cam-stills [hidden]{ display:none; }
+.cam-stills:not(:has(figure:not([hidden]))){ display:none; }
+.cam-stills .frame img{ aspect-ratio:16/9; object-fit:cover; }
+@media (min-width:821px){
+  .cam-stills{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+

@@ -1,0 +1,46 @@
+/* Sculpting page. Loads after style.css, home.css and horror.css. */
+.s-hero{
+  min-height:70vh;
+  background:
+    radial-gradient(ellipse 55% 60% at 80% 35%, rgba(190,70,50,0.16), transparent 70%),
+    radial-gradient(ellipse 50% 50% at 10% 95%, rgba(245,121,42,0.10), transparent 70%),
+    var(--bg-primary);
+}
+.s-hero h1{ animation:none; }
+.s-hero h1 em{ color:var(--accent); }
+
+.s-grid{
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:clamp(1rem,2vw,1.6rem);
+  margin-top:clamp(2.5rem,5vw,4rem);
+}
+.s-card button{
+  display:block; width:100%; padding:0; margin-bottom:1rem;
+  border:1px solid var(--line); background:#1b1b1b; border-radius:2px;
+  cursor:zoom-in; overflow:hidden; transition:border-color .25s ease;
+}
+.s-card button:hover{ border-color:rgba(245,121,42,.5); }
+.s-card img{ display:block; width:100%; aspect-ratio:4/3; object-fit:contain; transition:transform .5s ease; }
+.s-card button:hover img{ transform:scale(1.05); }
+.s-card h3{ font-family:var(--font-display); font-weight:400; font-size:1.7rem; letter-spacing:.03em; line-height:1.05; margin:.4rem 0; }
+.s-card p{ color:var(--text-secondary); font-size:.88rem; line-height:1.6; }
+.how-num{ font-family:var(--font-mono); font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); }
+@media (max-width:1100px){ .s-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (max-width:760px){ .s-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:480px){ .s-grid{ grid-template-columns:1fr; } }
+
+.s-note{
+  margin-top:clamp(2.5rem,5vw,4rem);
+  border-left:2px solid var(--accent);
+  padding:.4rem 0 .4rem 1.4rem;
+  max-width:70ch;
+}
+.s-note p{ color:var(--text-secondary); line-height:1.75; margin-top:.5rem; }
+
+.s-dev{ background:var(--bg-secondary); }
+.s-dev .frame{ margin:0; }
+.wip-3{ grid-template-columns:repeat(3,minmax(0,1fr)); }
+.s-dev .now-copy h2{ font-family:var(--font-display); font-weight:400; }
+.s-dev .a-actions{ margin-top:1.6rem; }
+.s-dev .btn-ghost{ background:transparent; color:var(--text-primary); border:1px solid var(--line); }
+.s-dev .btn-ghost:hover{ border-color:var(--accent); color:var(--accent); }

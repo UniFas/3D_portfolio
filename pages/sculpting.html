@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Sculpting - UNI FAS 3D</title>
+<meta name="description" content="3D sculpting work by Francis Santos (UnifasDev): an academic human anatomy study in Blender and The Developer, a creature in progress.">
+<link rel="icon" type="image/png" href="../assets/Branding_unifas3d/logo_v4.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/horror.css">
+<link rel="stylesheet" href="../css/sculpting.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Replace this nav with the one from your other pages so it matches exactly -->
+<nav class="nav">
+  <a class="logo" href="../index.html">UNI<b>FAS</b>3D</a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+  </div>
+</nav>
+
+<header class="h-hero s-hero">
+  <div class="h-hero-inner">
+    <span class="eyebrow">Sculpting &middot; Anatomy &middot; Blender</span>
+    <h1>3D <em>Sculpting</em></h1>
+    <p>Sculpting is the part of 3D I'm least confident in, so I practice it in the open. Here is where I started, and where I'm heading next.</p>
+    <div class="h-hero-links">
+      <a class="btn" href="#study">Anatomy study</a>
+      <a class="btn btn-ghost" href="#developer">The Developer</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PROJECT 01 ============ -->
+<section class="section" id="study">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">Project 01 &middot; Academic exercise</span>
+      <h2>Human anatomy study</h2>
+      <p>A school exercise: recreate a real person's physique as a 3D model in Blender. I chose a bodybuilder (Arnold Schwarzenegger) so I could study every major muscle group, how proportions change between views, and how small details make a body believable.</p>
+    </div>
+
+    <div class="video reveal" data-yt="7sLr1xAHCoU" data-title="Human anatomy study: turntable">
+      <button type="button" aria-label="Play turntable"><span class="play"></span></button>
+    </div>
+    <div class="cap reveal">
+      <span>Turntable &middot; academic exercise</span>
+      <a class="hl" href="https://youtu.be/7sLr1xAHCoU" target="_blank" rel="noopener">YouTube &#8599;</a>
+    </div>
+
+    <div class="s-grid">
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/01-base-mesh.webp" data-cap="Base figure from a single vertex: Mirror, Skin and Subdivision Surface modifiers, set against blueprints">
+          <img src="../assets/Sculpting/Arnold/01-base-mesh.webp" alt="Pink base human figure between front and side blueprints" loading="lazy">
+        </button>
+        <span class="how-num">01 &middot; Base mesh</span>
+        <h3>One vertex, one human</h3>
+        <p>Started from a single vertex with Mirror, Skin and Subdivision modifiers, building a generic body to get the proportions roughly right.</p>
+      </article>
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/02-first-sculpt-pass.webp" data-cap="Generic body after the first sculpting pass">
+          <img src="../assets/Sculpting/Arnold/02-first-sculpt-pass.webp" alt="Red sculpted human body after the first pass" loading="lazy">
+        </button>
+        <span class="how-num">02 &middot; Body</span>
+        <h3>Chest, back and legs</h3>
+        <p>Sculpted the big forms first, then checked them against the reference with overlays and an eight-section proportion grid.</p>
+      </article>
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/03-head.webp" data-cap="Head, almost complete. Eyelids and the back of the skull still need work">
+          <img src="../assets/Sculpting/Arnold/03-head.webp" alt="Front view of the sculpted head" loading="lazy">
+        </button>
+        <span class="how-num">03 &middot; Head</span>
+        <h3>Face from a blank form</h3>
+        <p>The base had no face at all. I prioritized structure first, so the eyelids and neck area are the parts I'd push further.</p>
+      </article>
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/04-hand-blockout.webp" data-cap="Low-poly hand blockout built from a plane with extrusions">
+          <img src="../assets/Sculpting/Arnold/04-hand-blockout.webp" alt="Low-poly hand blockout" loading="lazy">
+        </button>
+        <span class="how-num">04 &middot; Hands</span>
+        <h3>Built from a plane</h3>
+        <p>A new workflow for me: I normally start from a cube. Here the palm came from a plane, with fingers and thumb extruded out of it.</p>
+      </article>
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/05-hand-sculpt.webp" data-cap="Sculpted hand, back and palm views, after merging the separate objects">
+          <img src="../assets/Sculpting/Arnold/05-hand-sculpt.webp" alt="Sculpted hand shown from the back and from the palm" loading="lazy">
+        </button>
+        <span class="how-num">05 &middot; Sculpt</span>
+        <h3>Merge and refine</h3>
+        <p>Merged the pieces into one surface and smoothed the transitions, then added nails with Solidify and Subdivision.</p>
+      </article>
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/06-palm-details.webp" data-cap="Final palm with skin creases and calluses below the fingers">
+          <img src="../assets/Sculpting/Arnold/06-palm-details.webp" alt="Sculpted palm with creases and calluses" loading="lazy">
+        </button>
+        <span class="how-num">06 &middot; Details</span>
+        <h3>Creases and calluses</h3>
+        <p>Small details like calluses below the fingers are what make a model feel believable.</p>
+      </article>
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/07-foot-blockout.webp" data-cap="Foot blockout with the toes extruded from the base shape">
+          <img src="../assets/Sculpting/Arnold/07-foot-blockout.webp" alt="Foot blockout with extruded toes" loading="lazy">
+        </button>
+        <span class="how-num">07 &middot; Feet</span>
+        <h3>Same method, new part</h3>
+        <p>Extruded and pulled faces for the general shape and toes, then moved on to the sides and the top.</p>
+      </article>
+      <article class="s-card reveal">
+        <button type="button" data-full="../assets/Sculpting/Arnold/08-foot-sculpt.webp" data-cap="Top of the foot with veins and tendons sculpted">
+          <img src="../assets/Sculpting/Arnold/08-foot-sculpt.webp" alt="Sculpted foot with veins and tendons" loading="lazy">
+        </button>
+        <span class="how-num">08 &middot; Detail</span>
+        <h3>Veins and tendons</h3>
+        <p>Sculpted veins and muscle over the foot so it matches the reference's character.</p>
+      </article>
+    </div>
+
+    <div class="s-note reveal">
+      <span class="how-num">Honest reflection</span>
+      <p>The model isn't perfect, and I'm happy to say so. The face needs more definition and the muscle groups can be pushed further. Next steps are finishing the face, refining the muscles and adding textures. I feel far more comfortable sculpting than when I started, and that's the point of the exercise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECT 02 ============ -->
+<section class="section s-dev" id="developer">
+  <div class="section-inner now-grid">
+    <div class="reveal">
+      <div class="frame">
+        <button type="button" data-full="../assets/TheDeveloper/concept-sheet.webp" data-cap="The Developer: concept sheet (AI-generated reference I model from)">
+          <img src="../assets/TheDeveloper/concept-sheet.webp" alt="Concept sheet of The Developer, a gaunt long-limbed creature with an old TV monitor for a head" loading="lazy">
+        </button>
+      </div>
+      <p class="cap"><span>Concept sheet &middot; reference I model from</span><span class="hl">tap to zoom</span></p>
+      <div class="wip wip-3">
+        <button type="button" class="thumb" data-full="../assets/TheDeveloper/blockout-skin-mesh.webp" data-cap="Blockout in Blender: Mirror, Skin and Subdivision modifiers">
+          <img src="../assets/TheDeveloper/blockout-skin-mesh.webp" alt="Early blockout of the character in the Blender viewport" loading="lazy"><span>Blockout</span>
+        </button>
+        <button type="button" class="thumb" data-full="../assets/TheDeveloper/scale-check.webp" data-cap="Scale check against a 1.8 m human reference">
+          <img src="../assets/TheDeveloper/scale-check.webp" alt="Front and side A-pose next to a 1.8 metre human reference" loading="lazy"><span>Scale check</span>
+        </button>
+        <button type="button" class="thumb" data-full="../assets/TheDeveloper/concept-head.webp" data-cap="Head concept: an old monitor that doubles as a helmet">
+          <img src="../assets/TheDeveloper/concept-head.webp" alt="Close-up concept of the monitor head" loading="lazy"><span>Head concept</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="now-copy reveal">
+      <span class="chip-live">In progress &middot; Project 02</span>
+      <h2>The Developer</h2>
+      <p>My second sculpting project, and a step up from the school exercise: a creature for my game <strong>The Interview</strong>, with an old monitor where his head used to be. This time there is no class guide, just my own concept and the lessons from Project 01.</p>
+      <ul class="pipe">
+        <li class="done"><span class="st">Done</span><span><strong>Concept and scale</strong> reference</span></li>
+        <li class="doing"><span class="st">Doing</span><span><strong>Character blockout</strong> with Mirror, Skin and Subdivision</span></li>
+        <li><span class="st">Next</span><span><strong>High-poly sculpt</strong>, then retopo, bakes and textures</span></li>
+      </ul>
+      <div class="a-actions">
+        <a class="btn btn-ghost" href="../index.html#now">Follow the full build</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <span>&copy; 2026 Francis Santos &mdash; UNI FAS 3D</span>
+  <span><a href="projects.html">&larr; All projects</a> &nbsp;&middot;&nbsp; <a href="#top">Back to top &uarr;</a></span>
+</footer>
+
+<dialog class="lightbox" id="lb">
+  <button class="lb-close" type="button" aria-label="Close">&times;</button>
+  <img alt="">
+  <div class="lb-cap"></div>
+</dialog>
+
+<script src="../js/horror.js"></script>
+</body>
+</html>
